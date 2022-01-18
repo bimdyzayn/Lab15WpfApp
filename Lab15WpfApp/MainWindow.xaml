@@ -1,0 +1,150 @@
+﻿<Window x:Class="Lab15WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab15WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DocumentViewer>
+                <FixedDocument>
+                </FixedDocument>
+        </DocumentViewer>
+        <FlowDocumentScrollViewer Margin="0,34,0,0">
+            <FlowDocument>
+                <Paragraph>
+                    Стихи о животных
+                </Paragraph>
+                
+                    <List MarkerStyle="Box">
+                        <ListItem>
+                            <Paragraph>
+                            Стихи о домашних животных
+                        </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                            Стихи о диких животных
+                        </Paragraph>
+                        </ListItem>
+                        
+                    
+                    </List>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="1*"/>
+                        <TableColumn Width="1*"/>
+
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Стихи о диких животных
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Стихи о домашних животных
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell BorderThickness="0,0,15,0">
+                                <Paragraph>
+                                    1 Бобр
+                                </Paragraph>
+                                <Paragraph>
+                                  БобрБобр бобрятам строит дом
+                                  Под березовым бревном
+                                  В тихой реченьке за бором.
+                                  В хатке будут жить бобрята
+                                  Очень дружно и богато!
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell BorderThickness="0">
+                                <Paragraph>
+                                    1 Котенок
+                                </Paragraph>
+                                <Paragraph>
+                                    Если кто-то с места сдвинется,
+На него котенок кинется.
+Если что-нибудь покатится,
+За него котенок схватится.
+Прыг-скок! Цап-царап!
+Не уйдешь из наших лап!
+                                </Paragraph>
+                            </TableCell>
+                            
+                        </TableRow>
+                        <TableRow>
+                            <TableCell BorderThickness="0,0,15,0">
+                                <Paragraph>
+                                    2 Волк
+                                </Paragraph>
+                                <Paragraph>
+                                    С малых лет ребят пугают,
+Что волчок их покусает,
+Ночью из лесу придет
+И с собою унесет.
+Только взять не могут в толк,
+Что ни разу серый волк
+Ни к кому не прибегал
+И детишек не кусал!
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    2 Щенок 
+                                </Paragraph>
+                                <Paragraph>
+                                    Хитроглазый мой щенок,
+Шерстяные лапки...
+Это кто у нас погрыз
+Новенькие тапки?
+В глазках вижу я ответ:
+Нет, не я это, нет, нет!
+Тапки сами в рот полезли
+И нечаянно разлезлись.
+                                </Paragraph>
+                            </TableCell>
+
+                        </TableRow>
+                        <TableRow>
+                            <TableCell BorderThickness="0,0,15,0">
+                                <Paragraph>
+                                    3 Лиса
+                                </Paragraph>
+                                <Paragraph>
+                                    В рыжем платьице из ситца
+раскрасавица лисица.
+Хвостик — с белым кончиком,
+краска, что ли, кончилась?
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    3 Корова
+                                </Paragraph>
+                                <Paragraph>
+                                    Представить невозможно!
+Поверить нелегко!
+Жуёт корова сено
+А дарит молоко!
+                                </Paragraph>
+                            </TableCell>
+
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        </Grid>
+</Window>
